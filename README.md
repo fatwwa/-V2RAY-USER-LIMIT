@@ -19,6 +19,7 @@
 7 - cd  (root access in root folder) 
 
 8 - 
+
 8.1 Edit main.py for yourself Configurate in your system (Allow Device: LINE 10 , T-BOT ID : LINE 12 @botfather, Your T-ID : LINE 13 @cid_bot, Lock TIME : LINE 89 -Default : time.sleep(1000)  -->ONLY EDIT NUMBERS [sec] - for minutes : num/60)
 
 8.2 - Copy main.py File in /root/
