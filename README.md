@@ -44,4 +44,5 @@ python3 main.py
 
 
 ----------------
-#FOR DONATE : IR BANK Credit Card: 6219 8610 2178 2056
+
+# FOR DONATE : IR BANK Transfer from Deposit to Credit Card : 6219 8610 2178 2056
