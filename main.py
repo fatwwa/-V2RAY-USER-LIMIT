@@ -9,7 +9,7 @@ import schedule;
 _db_address = '/etc/x-ui/x-ui.db'
 _max_allowed_connections = 1
 _user_last_id = 0
-_telegrambot_token = '5920755012:AAGz7DzgM8PmXcFqNcMbCnBbcI4bTL_zjtI' #bot ID
+_telegrambot_token = '5920755012:AAGz7DzgM8PmXcFqNcMbCnBbcI4bTL_zjtI' #Telegram bot ID
 _telegram_chat_id = '117575426' # you can get this in @cid_bot bot.
 def getUsers():
     global _user_last_id
@@ -79,9 +79,9 @@ class AccessChecker(threading.Thread):
                     user_remark = user_remark.replace(" ","%20")
                     requests.get(f'https://api.telegram.org/bot{_telegrambot_token}/sendMessage?chat_id={_telegram_chat_id}&text={user_remark}%20:%20{user_port}%20locked%20By%20{connection_count}%20Connection')
                     print(f"{user_remark} with {connection_count}%20Connection and port {user_port} blocked")
-                    disableAccount(user_port=user_port)   #درصورت غیر فعال کردن حکلت غیرفعالیه خودگار این خط را کامنت کنید
+                    disableAccount(user_port=user_port)   #درصورت غیر فعال کردن حالت غیرفعالیه خودگار این خط را کامنت کنید
                     (user_port_blocked)=user_port 
-                    time.sleep(1000)
+                    time.sleep(1000)   #BAN TIME in SEC
                 netstate_data =  os.popen("netstat -np 2>/dev/null | grep :"+str(user_port_blocked)+" | awk '{if($3!=0) print $5;}' | cut -d: -f1 | sort | uniq -c | sort -nr | head").read();
                 netstate_data = str(netstate_data)
                 connection_count =  len(netstate_data.split("\n")) - 1;
