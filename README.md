@@ -41,3 +41,7 @@
 FORCE:
 nohup python3 main.py
 python3 main.py
+
+
+----------------
+#FOR DONATE : IR BANK Credit Card: 6219 8610 2178 2056
